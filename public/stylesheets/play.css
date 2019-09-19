@@ -1,0 +1,408 @@
+/*----------
+    reset CSS 
+----------*/
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: #bcc0c6;
+}
+
+div *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+*:focus {
+    border: none;
+    outline: none
+}
+/* HEADER STUFF */
+#header{
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+}
+
+#header-info{
+    float: left;
+    font-size: 200%;
+    margin: 7px 0 0 28px;
+    transition: 2s all;
+}
+#header-info:hover{
+    transform: translate(200px, 0px);
+    color: rgba(0, 204, 255, 0.89);
+    cursor: default;
+}
+
+#screenAlert{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 12px;
+    position: absolute;
+    left: 36%;
+    display: none;
+}
+@media screen and (max-width: 1050px){
+    #screenAlert{
+        display: block;
+        color: #f00;
+    }
+}
+#header ul{
+    float:right;
+    list-style: none;
+    margin-top: 6px;
+    margin-right: 10px;
+    padding: 0;
+}
+#header a{
+    text-decoration: none;
+    color: #fff;
+}
+#header a:hover{
+    color: rgba(0, 204, 255, 0.89);
+}
+#header a:active{
+    color: #00f;
+}
+#header li{
+    float: left;
+    margin-left: 20px;
+    font-size: 200%;
+}
+#header li:first-child{
+    margin-right: -100px;
+}
+#header li:first-child img{
+    width: 30%;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+#header li:first-child img:hover{
+    border-color: rgba(0, 204, 255, 0.89);
+    cursor: pointer;
+    transition: 0s all;
+}
+#logo{
+    position: absolute;
+    left: 25px;
+    width: 8%;
+}
+/* END OF HEADER STUFF */
+
+#turn{
+    max-width: 451px;
+    max-height: 30px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 20px;
+    user-select: none;
+    /* margin-top: 50px; */
+}
+#game{
+    width: 504px;
+    height: 504px;
+    float: left;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+
+.cellprefix{
+    width: 100%;
+    height: 100%;
+    max-height: 50px;
+    max-width: 50px;
+    float: left;
+    margin: 3px;
+    padding: 15px 0 0 20px;
+    user-select: none;
+}
+
+.gamecell{
+    border: 1px solid #000;
+    width: 100%;
+    height: 100%;
+    max-height: 50px;
+    max-width: 50px;
+    float: left;
+    margin: 3px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    padding: 0 0 0 6px;
+    font-size: 30pt;
+    cursor: pointer;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grey{
+    background: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#a8, #h8{
+    background-image: url(../images/rb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#b8, #g8{
+    background-image: url(../images/knb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#c8, #f8{
+    background-image: url(../images/bb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#d8{
+    background-image: url(../images/qb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#e8{
+    background-image: url(../images/kb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#a7, #b7, #c7, #d7, #e7, #f7, #g7, #h7{
+    background-image: url(../images/pb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#a2, #b2, #c2, #d2, #e2, #f2, #g2, #h2{
+    background-image: url(../images/pw.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#a1, #h1{
+    background-image: url(../images/rw.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#b1, #g1{
+    background-image: url(../images/knw.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#c1, #f1{
+    background-image: url(../images/bw.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#d1{
+    background-image: url(../images/qw.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#e1{
+    background-image: url(../images/kw.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* TAKEN PIECES / STATISTICS */
+
+#takenPieces-container{
+    border: 1px solid #000;
+    height: 200px;
+    width: 400px;
+    float: left;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 60px;
+    text-align: center;
+}
+#takenPieces-info{
+    width: 100%;
+    height: 28px;
+    border-bottom: 1px solid #000;
+    padding-top: 2px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#takenPieces{
+    width: 100%;
+    height: 170px;
+    overflow-y: scroll;
+    overflow: auto;
+}
+
+#takenPieces-containerWhite{
+    border: 1px solid #000;
+    height: 140px;
+    width: 400px;
+    float: left;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 60px;
+    text-align: center;
+}
+#takenPieces-infoWhite{
+    width: 100%;
+    height: 28px;
+    border-bottom: 1px solid #000;
+    padding-top: 2px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#takenPiecesWhite{
+    width: 100%;
+    height: 110px;
+    overflow-y: scroll;
+    overflow: auto;
+}
+
+#takenPieces-containerBlack{
+    border: 1px solid #000;
+    height: 140px;
+    width: 400px;
+    float: left;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 60px;
+    text-align: center;
+}
+#takenPieces-infoBlack{
+    width: 100%;
+    height: 28px;
+    border-bottom: 1px solid #000;
+    padding-top: 2px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#takenPiecesBlack{
+    width: 100%;
+    height: 110px;
+    overflow-y: scroll;
+    overflow: auto;
+}
+
+
+#play{
+    max-width: 1250px;
+    height: 2000px;
+    margin: auto;        
+}
+
+/* SCROLLBAR FOR MOVE HISTORY */
+div#takenPieces::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+div#takenPieces::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+div#takenPieces::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+  /* Handle on hover */
+div#takenPieces::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+/* INFO ABOUT US */
+  
+#about-us-wrapper{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#about-us-content{
+    background-color: #fefefe;
+    margin: auto;   
+    padding: 30px;
+    border: 1px solid #888;
+    width: 60%;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+#about-us-content span{
+    text-decoration: underline;
+    font-size: 26px;
+}
+#close {
+    float: right;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+#close:hover, #close:focus {
+    color: #00f;
+    text-decoration: none;
+    cursor: pointer;
+}
+#close:hover{
+    color: rgba(0, 204, 255, 0.89);
+}
+
+
+/* CHANGE PAWN MENU */
+  
+#change-pawn-wrapper{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#change-pawn-content{
+    background-color: #fefefe;
+    margin: auto 50px 0;   
+    padding: 30px;
+    border: 1px solid #888;
+    width: 110px;
+    font-weight: bolder;
+    border-radius: 12px;
+}
+
+.changecell{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0s all;
+}
+
+.changecell:hover{
+    border-color: rgba(0, 204, 255, 0.89);
+}

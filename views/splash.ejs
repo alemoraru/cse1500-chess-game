@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = "stylesheets/splash.css" rel = "stylesheet"/>
+        <link rel="icon" type="image/png" href="images/logo-tab.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        <title>CHESS: a 2D game for nerds!</title>
+    </head>
+    <body>
+            <div id = "header">
+                <div id = "header-left">
+                    <div id = "header-left-top">
+                        <img draggable = "false" src = "images/logo-tab.png" id = "info" onclick="myFunction()"/>
+                    </div>
+                    <div id = "header-left-bottom" style="margin-top:60px;">
+                        <h1>CLASSIC CHESS</h1>
+                        <h2>1 v 1</h2>
+                        <h1>Never simpler</h1>
+                    </div>
+                </div>
+                <div id = "header-right">
+                    <div id = "space">
+                        
+                        <p>Hi there!</p>
+                        <p>We can see you've played <%=cookieCount%> games on our website! Keep going!</p>
+
+                    </div>
+                    <h1> <%=playedMatches%> Matches played</h1>
+                    <a href = "play.html"><button><span>Play Game</span></button></a>
+                    <h1>  <%=onGoingMatches%> Matches ongoing</h1>
+                 </div>
+            </div>
+
+            <script>
+                if (document.cookie.length == 0) {
+                    document.cookie = "count=0";
+                }
+            </script>
+    </body>
+</html>
