@@ -1,6 +1,6 @@
 {
-  "name": "chess",
-  "version": "0.0.0",
+  "name": "cse1500-chess",
+  "version": "v1.1.0",
   "private": true,
   "scripts": {
     "start": "node app.js 3012"

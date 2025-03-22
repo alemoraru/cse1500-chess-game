@@ -1,166 +1,173 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href = "stylesheets/play.css" rel = "stylesheet"/>
-        <link rel="icon" type="image/png" href="images/logo-tab.png"/>
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-        <title>CHESS: a 2D game for nerds!</title>
-    </head>
-    <div id = "header">
-        <div id = "header-info">
-            2D CHESS!
-        </div>
-        <div id = "screenAlert">
-            Screen Resolution isn't optimal! 
-            Zoom out!
-        </div>
-        <ul>
-            <li><img id = "about-us-button" src = "images/info.png"/></li>
-            <li><a href = "/">Home</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Chess" target="_blank" title="Wiki article for chess">WikiChess</a></li>
-        </ul>
+<html lang="en-GB">
+<head>
+    <link href="stylesheets/play.css" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="images/logo-tab.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <title>CHESS: a 2D game for nerds!</title>
+</head>
+<div id="header">
+    <div id="header-info">
+        2D CHESS!
     </div>
-    <body>
-        <!-- <img id = "logo" src = "images/logo-tab.png"/> -->
-        <div id = "play wrapper">   
-            <div id = "play">
-                <div id = "game"> 
-                    <div class = "cellprefix" class = "cellprefixNumber">8</div>
-                    <div class = "gamecell" id = "a8" style = "background-image: url(../images/rb.png)"></div>
-                    <div class = "gamecell grey" id = "b8" style = "background-image: url(../images/knb.png)"></div>
-                    <div class = "gamecell" id = "c8" style = "background-image: url(../images/bb.png)"></div>
-                    <div class = "gamecell grey" id = "d8" style = "background-image: url(../images/qb.png)"></div>
-                    <div class = "gamecell" id = "e8" style = "background-image: url(../images/kb.png)"></div>
-                    <div class = "gamecell grey" id = "f8" style = "background-image: url(../images/bb.png)"></div>
-                    <div class = "gamecell" id = "g8" style = "background-image: url(../images/knb.png)"></div>
-                    <div class = "gamecell grey" id = "h8" style = "background-image: url(../images/rb.png)"></div>
-                    <div class = "cellprefix" class = "cellprefixNumber">7</div>
-                    <div class = "gamecell grey" id = "a7" style = "background-image: url(../images/pb.png)"></div>
-                    <div class = "gamecell" id = "b7" style = "background-image: url(../images/pb.png)"></div>
-                    <div class = "gamecell grey" id = "c7" style = "background-image: url(../images/pb.png)"></div>
-                    <div class = "gamecell" id = "d7" style = "background-image: url(../images/pb.png)"></div>
-                    <div class = "gamecell grey" id = "e7" style = "background-image: url(../images/pb.png)"></div>
-                    <div class = "gamecell" id = "f7" style = "background-image: url(../images/pb.png)"></div>
-                    <div class = "gamecell grey" id = "g7" style = "background-image: url(../images/pb.png)"></div>
-                    <div class = "gamecell" id = "h7" style = "background-image: url(../images/pb.png)"></div>
-                    <div class = "cellprefix" class = "cellprefixNumber">6</div>
-                    <div class = "gamecell" id = "a6" style = "background-image: none"></div>
-                    <div class = "gamecell grey" id = "b6" style = "background-image: none"></div>
-                    <div class = "gamecell" id = "c6" style = "background-image: none"></div>
-                    <div class = "gamecell grey" id = "d6" style = "background-image: none"></div>
-                    <div class = "gamecell" id = "e6" style = "background-image: none"></div>
-                    <div class = "gamecell grey" id = "f6" style = "background-image: none"></div>
-                    <div class = "gamecell" id = "g6" style = "background-image: none"></div>
-                    <div class = "gamecell grey" id = "h6" style = "background-image: none"></div>
-                    <div class = "cellprefix" class = "cellprefixNumber">5</div>
-                    <div class = "gamecell grey" id = "a5" style = "background-image: none"></div>
-                    <div class = "gamecell" id = "b5" style = "background-image: none"></div>
-                    <div class = "gamecell grey" id = "c5" style = "background-image: none"></div>
-                    <div class = "gamecell" id = "d5" style = "background-image: none"></div>
-                    <div class = "gamecell grey" id = "e5" style = "background-image: none"></div>
-                    <div class = "gamecell" id = "f5" style = "background-image: none"></div>
-                    <div class = "gamecell grey" id = "g5" style = "background-image: none"></div>
-                    <div class = "gamecell" id = "h5" style = "background-image: none"></div>
-                    <div class = "cellprefix">4</div>
-                    <div class = "gamecell" id = "a4" style = "background-image: none"></div>
-                    <div class = "gamecell grey" id = "b4" style = "background-image: none"></div>
-                    <div class = "gamecell" id = "c4" style = "background-image: none"></div>
-                    <div class = "gamecell grey" id = "d4" style = "background-image: none"></div>
-                    <div class = "gamecell" id = "e4" style = "background-image: none"></div>
-                    <div class = "gamecell grey" id = "f4" style = "background-image: none"></div>
-                    <div class = "gamecell" id = "g4" style = "background-image: none"></div>
-                    <div class = "gamecell grey" id = "h4" style = "background-image: none"></div>
-                    <div class = "cellprefix" class = "cellprefixNumber">3</div>
-                    <div class = "gamecell grey" id = "a3" style = "background-image: none"></div>
-                    <div class = "gamecell" id = "b3" style = "background-image: none"></div>
-                    <div class = "gamecell grey" id = "c3" style = "background-image: none"></div>
-                    <div class = "gamecell" id = "d3" style = "background-image: none"></div>
-                    <div class = "gamecell grey" id = "e3" style = "background-image: none"></div>
-                    <div class = "gamecell" id = "f3" style = "background-image: none"></div>
-                    <div class = "gamecell grey" id = "g3" style = "background-image: none"></div>
-                    <div class = "gamecell" id = "h3" style = "background-image: none"></div>
-                    <div class = "cellprefix" class = "cellprefixNumber">2</div>
-                    <div class = "gamecell" id = "a2" style = "background-image: url(../images/pw.png)"></div>
-                    <div class = "gamecell grey" id = "b2" style = "background-image: url(../images/pw.png)"></div>
-                    <div class = "gamecell" id = "c2" style = "background-image: url(../images/pw.png)"></div>
-                    <div class = "gamecell grey" id = "d2" style = "background-image: url(../images/pw.png)"></div>
-                    <div class = "gamecell" id = "e2" style = "background-image: url(../images/pw.png)"></div>
-                    <div class = "gamecell grey" id = "f2" style = "background-image: url(../images/pw.png)"></div>
-                    <div class = "gamecell" id = "g2" style = "background-image: url(../images/pw.png)"></div>
-                    <div class = "gamecell grey" id = "h2" style = "background-image: url(../images/pw.png)"></div>
-                    <div class = "cellprefix" class = "cellprefixNumber">1</div>
-                    <div class = "gamecell grey" id = "a1" style = "background-image: url(../images/rw.png)"></div>
-                    <div class = "gamecell" id = "b1" style = "background-image: url(../images/knw.png)"></div>
-                    <div class = "gamecell grey" id = "c1" style = "background-image: url(../images/bw.png)"></div>
-                    <div class = "gamecell" id = "d1" style = "background-image: url(../images/qw.png)"></div>
-                    <div class = "gamecell grey" id = "e1" style = "background-image: url(../images/kw.png)"></div>
-                    <div class = "gamecell" id = "f1" style = "background-image: url(../images/bw.png)"></div>
-                    <div class = "gamecell grey" id = "g1" style = "background-image: url(../images/knw.png)"></div>
-                    <div class = "gamecell" id = "h1" style = "background-image: url(../images/rw.png)"></div>
-                    <div class = "cellprefix"></div>
-                    <div class = "cellprefix">a</div>
-                    <div class = "cellprefix">b</div>
-                    <div class = "cellprefix">c</div>
-                    <div class = "cellprefix">d</div>
-                    <div class = "cellprefix">e</div>
-                    <div class = "cellprefix">f</div>
-                    <div class = "cellprefix">g</div>
-                    <div class = "cellprefix">h</div>
-                    <div id = "turn" style = "border: 1px solid #000; border-style: inset;background-color: #fff;">It's White's Turn</div>
-                </div>
-
-                <div id = "takenPieces-containerBlack">
-                    <div id = "takenPieces-infoBlack">
-                        TAKEN PIECES BLACK
-                    </div>
-                    <div id = "takenPiecesBlack">
-                    </div>        
-                </div>
-
-                <div id = "takenPieces-container">
-                    <div id = "takenPieces-info">
-                        MOVE HISTORY
-                    </div>
-                    <div id = "takenPieces">
-                        <!--     -->
-                    </div>        
-                </div>
-
-                <div id = "takenPieces-containerWhite">
-                    <div id = "takenPieces-infoWhite">
-                        TAKEN PIECES WHITE
-                    </div>
-                    <div id = "takenPiecesWhite">
-                    </div>        
-                </div>
-            </div>
-        </div>
-        
-        <div id = "about-us-wrapper">
-            <div id = "about-us-content">
-                <div id = "close">&times;</div>
-                <p>A game designed and implemented by the Vianu boyz:<br/></br><span>Alexandru Moraru & Octavian Pene</span></p>
+    <div id="screenAlert">
+        Screen Resolution isn't optimal!
+        Zoom out!
+    </div>
+    <ul>
+        <li><img id="about-us-button" src="images/info.png"/></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Chess" target="_blank" title="Wiki article for chess">WikiChess</a>
+        </li>
+    </ul>
+</div>
+<body>
+<div id="play wrapper">
+    <div id="play">
+        <div id="game">
+            <div class="cellprefix" class="cellprefixNumber">8</div>
+            <div class="gamecell" id="a8" style="background-image: url(../images/rb.png)"></div>
+            <div class="gamecell grey" id="b8" style="background-image: url(../images/knb.png)"></div>
+            <div class="gamecell" id="c8" style="background-image: url(../images/bb.png)"></div>
+            <div class="gamecell grey" id="d8" style="background-image: url(../images/qb.png)"></div>
+            <div class="gamecell" id="e8" style="background-image: url(../images/kb.png)"></div>
+            <div class="gamecell grey" id="f8" style="background-image: url(../images/bb.png)"></div>
+            <div class="gamecell" id="g8" style="background-image: url(../images/knb.png)"></div>
+            <div class="gamecell grey" id="h8" style="background-image: url(../images/rb.png)"></div>
+            <div class="cellprefix" class="cellprefixNumber">7</div>
+            <div class="gamecell grey" id="a7" style="background-image: url(../images/pb.png)"></div>
+            <div class="gamecell" id="b7" style="background-image: url(../images/pb.png)"></div>
+            <div class="gamecell grey" id="c7" style="background-image: url(../images/pb.png)"></div>
+            <div class="gamecell" id="d7" style="background-image: url(../images/pb.png)"></div>
+            <div class="gamecell grey" id="e7" style="background-image: url(../images/pb.png)"></div>
+            <div class="gamecell" id="f7" style="background-image: url(../images/pb.png)"></div>
+            <div class="gamecell grey" id="g7" style="background-image: url(../images/pb.png)"></div>
+            <div class="gamecell" id="h7" style="background-image: url(../images/pb.png)"></div>
+            <div class="cellprefix" class="cellprefixNumber">6</div>
+            <div class="gamecell" id="a6" style="background-image: none"></div>
+            <div class="gamecell grey" id="b6" style="background-image: none"></div>
+            <div class="gamecell" id="c6" style="background-image: none"></div>
+            <div class="gamecell grey" id="d6" style="background-image: none"></div>
+            <div class="gamecell" id="e6" style="background-image: none"></div>
+            <div class="gamecell grey" id="f6" style="background-image: none"></div>
+            <div class="gamecell" id="g6" style="background-image: none"></div>
+            <div class="gamecell grey" id="h6" style="background-image: none"></div>
+            <div class="cellprefix" class="cellprefixNumber">5</div>
+            <div class="gamecell grey" id="a5" style="background-image: none"></div>
+            <div class="gamecell" id="b5" style="background-image: none"></div>
+            <div class="gamecell grey" id="c5" style="background-image: none"></div>
+            <div class="gamecell" id="d5" style="background-image: none"></div>
+            <div class="gamecell grey" id="e5" style="background-image: none"></div>
+            <div class="gamecell" id="f5" style="background-image: none"></div>
+            <div class="gamecell grey" id="g5" style="background-image: none"></div>
+            <div class="gamecell" id="h5" style="background-image: none"></div>
+            <div class="cellprefix">4</div>
+            <div class="gamecell" id="a4" style="background-image: none"></div>
+            <div class="gamecell grey" id="b4" style="background-image: none"></div>
+            <div class="gamecell" id="c4" style="background-image: none"></div>
+            <div class="gamecell grey" id="d4" style="background-image: none"></div>
+            <div class="gamecell" id="e4" style="background-image: none"></div>
+            <div class="gamecell grey" id="f4" style="background-image: none"></div>
+            <div class="gamecell" id="g4" style="background-image: none"></div>
+            <div class="gamecell grey" id="h4" style="background-image: none"></div>
+            <div class="cellprefix" class="cellprefixNumber">3</div>
+            <div class="gamecell grey" id="a3" style="background-image: none"></div>
+            <div class="gamecell" id="b3" style="background-image: none"></div>
+            <div class="gamecell grey" id="c3" style="background-image: none"></div>
+            <div class="gamecell" id="d3" style="background-image: none"></div>
+            <div class="gamecell grey" id="e3" style="background-image: none"></div>
+            <div class="gamecell" id="f3" style="background-image: none"></div>
+            <div class="gamecell grey" id="g3" style="background-image: none"></div>
+            <div class="gamecell" id="h3" style="background-image: none"></div>
+            <div class="cellprefix" class="cellprefixNumber">2</div>
+            <div class="gamecell" id="a2" style="background-image: url(../images/pw.png)"></div>
+            <div class="gamecell grey" id="b2" style="background-image: url(../images/pw.png)"></div>
+            <div class="gamecell" id="c2" style="background-image: url(../images/pw.png)"></div>
+            <div class="gamecell grey" id="d2" style="background-image: url(../images/pw.png)"></div>
+            <div class="gamecell" id="e2" style="background-image: url(../images/pw.png)"></div>
+            <div class="gamecell grey" id="f2" style="background-image: url(../images/pw.png)"></div>
+            <div class="gamecell" id="g2" style="background-image: url(../images/pw.png)"></div>
+            <div class="gamecell grey" id="h2" style="background-image: url(../images/pw.png)"></div>
+            <div class="cellprefix" class="cellprefixNumber">1</div>
+            <div class="gamecell grey" id="a1" style="background-image: url(../images/rw.png)"></div>
+            <div class="gamecell" id="b1" style="background-image: url(../images/knw.png)"></div>
+            <div class="gamecell grey" id="c1" style="background-image: url(../images/bw.png)"></div>
+            <div class="gamecell" id="d1" style="background-image: url(../images/qw.png)"></div>
+            <div class="gamecell grey" id="e1" style="background-image: url(../images/kw.png)"></div>
+            <div class="gamecell" id="f1" style="background-image: url(../images/bw.png)"></div>
+            <div class="gamecell grey" id="g1" style="background-image: url(../images/knw.png)"></div>
+            <div class="gamecell" id="h1" style="background-image: url(../images/rw.png)"></div>
+            <div class="cellprefix"></div>
+            <div class="cellprefix">a</div>
+            <div class="cellprefix">b</div>
+            <div class="cellprefix">c</div>
+            <div class="cellprefix">d</div>
+            <div class="cellprefix">e</div>
+            <div class="cellprefix">f</div>
+            <div class="cellprefix">g</div>
+            <div class="cellprefix">h</div>
+            <div id="turn" style="border: 1px solid #000; border-style: inset;background-color: #fff;">It's White's
+                Turn
             </div>
         </div>
 
-        <div id = "change-pawn-wrapper">
-            <div id = "change-pawn-content">
-                <span style = "padding-bottom: 10px;">Promote!</span>
-                <div class = "changecell" id = "queenchange" style = "background-image: url(../images/qw.png);"></div> Queen
-                <div class = "changecell" id = "knightchange" style = "background-image: url(../images/knw.png);"></div> Knight
-                <div class = "changecell" id = "bishopchange" style = "background-image: url(../images/bw.png);"></div> Bishop
-                <div class = "changecell" id = "rootchange" style = "background-image: url(../images/rw.png);"></div> Root
+        <div id="takenPieces-containerBlack">
+            <div id="takenPieces-infoBlack">
+                TAKEN PIECES BLACK
+            </div>
+            <div id="takenPiecesBlack">
             </div>
         </div>
 
-        <script src = "javascripts/aboutUs.js"></script>
-        <script src = "javascripts/moreFuncts.js"></script>
-        <script src = "javascripts/functionality.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    </body>
+        <div id="takenPieces-container">
+            <div id="takenPieces-info">
+                MOVE HISTORY
+            </div>
+            <div id="takenPieces">
+                <!--     -->
+            </div>
+        </div>
 
-    <script>
-            $(document).ready(findGame);
-    </script>
-    
+        <div id="takenPieces-containerWhite">
+            <div id="takenPieces-infoWhite">
+                TAKEN PIECES WHITE
+            </div>
+            <div id="takenPiecesWhite">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="about-us-wrapper">
+    <div id="about-us-content">
+        <div id="close">&times;</div>
+        <p>A game designed and implemented by the Vianu boyz:<br/></br><span>Alexandru Moraru & Octavian Pene</span></p>
+    </div>
+</div>
+
+<div id="change-pawn-wrapper">
+    <div id="change-pawn-content">
+        <span style="padding-bottom: 10px;">Promote!</span>
+        <div class="changecell" id="queenchange" style="background-image: url(../images/qw.png);"></div>
+        Queen
+        <div class="changecell" id="knightchange" style="background-image: url(../images/knw.png);"></div>
+        Knight
+        <div class="changecell" id="bishopchange" style="background-image: url(../images/bw.png);"></div>
+        Bishop
+        <div class="changecell" id="rootchange" style="background-image: url(../images/rw.png);"></div>
+        Root
+    </div>
+</div>
+
+<script src="javascripts/aboutUs.js"></script>
+<script src="javascripts/moreFuncts.js"></script>
+<script src="javascripts/functionality.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+<script>
+    $(document).
+        ready(findGame);
+</script>
+
 </html>
