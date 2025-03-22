@@ -1,22 +1,85 @@
-# cse1500-chessGame
+# ♟️CSE1500 Chess Game (Web-Based)
 
-This repository contains a fully fledged web game of chess developed in a team of 2 as part 
-of a Web & Database Technology course in the first year of a Bachelor in Computer Science & Engineering.
+This repository contains a fully functional web-based chess game, developed as part of the **Web & Database Technology**
+course during the first year of TU Delft's **Computer Science & Engineering** Bachelor's program. The project was built
+by a team of two using **JavaScript**, **HTML**, and **CSS**.
 
-# How do I play this game?
+---
 
-After you have succesfully mananged to clone the repository, make sure you have npm installed. 
-After you have installed npm, follow these instructions: 
+## 🚀 Features
 
-* Navigate to the file you have your project in and run the command ```npm start```
-* You should get a message in the terminal saying "*__Listening to port 3012__*"
-* Afterwards open the browser of your choice and access http://localhost:3012/
-* You should be prompted by the intro screen with the option to "__Play Game__"
-* After pressing the button you will be redirected to the play screen where you will wait for the second player
-* __Note:__ Unfortunately, you can only play locally, therefore you should duplicate the current tab
-in order to generate a new instance of a player.
+✅ **Two-Player Chess** – Play against another player in real-time.  
+✅ **Local Multiplayer** – Play by opening two instances in your browser.  
+✅ **Classic Chess Rules** – Follows standard chess mechanics.  
+✅ **Interactive UI** – Simple and clean interface for easy gameplay.
 
-# Can multiple people play simultaneously?
+---
 
-Yes, the functionality is there, however, it's only possible locally at the moment.
+## 🎮 How to Play (Locally)
 
+1️⃣ **Clone the Repository**
+
+If you are not familiar with Git/GitHub, please follow the official guide on
+[how to clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+
+Once you have cloned the repository, navigate to the project directory:
+
+```sh
+cd cse1500-chess-game
+```
+
+2️⃣ **Install Dependencies** (Ensure you have **Node.js** and **npm** installed)
+
+```sh
+npm install
+```
+
+3️⃣ **Run the Game**
+
+```sh
+npm start
+```
+
+4️⃣ **Access the Game**
+
+- Open your browser and go to:  
+  👉 [http://localhost:3012/](http://localhost:3012/)
+- Click on **"Play Game"** to start.
+- Since the game is local multiplayer, open a second tab to simulate another player.
+
+---
+
+## 🌍 Multiplayer Support
+
+At the moment, the game only supports **local** multiplayer (i.e., playing on the same machine by duplicating the tab).
+Full online multiplayer functionality is **not yet implemented** but can be added in the future.
+
+---
+
+## 🛠️ Technologies Used
+
+- **JavaScript** – Game logic and interactions
+- **HTML & CSS** – UI and layout
+- **Node.js & npm** – Local server setup
+
+---
+
+## 📌 Future Improvements
+
+- 🏆 Online multiplayer support
+- 🎨 Improved UI design
+- 📱 Mobile responsiveness
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request for any improvements or bug fixes.
+
+---
+
+## 📜 License
+
+This project is for educational purposes. Feel free to contribute or fork it for improvements!
+
+💡 _If you like this project, consider giving it a ⭐ on GitHub!_
