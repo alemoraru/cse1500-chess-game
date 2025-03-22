@@ -18,16 +18,16 @@ var changecell = document.getElementsByClassName("changecell");
 // }
 
 // rootchange.onclick = function() {
-    
+
 //     wrapperPawn.style.display = "none";
 // }
 
 // knightchange.onclick = function() {
-    
+
 //     wrapperPawn.style.display = "none";
 // }
 
 // bishopchange.onclick = function() {
-    
+
 //     wrapperPawn.style.display = "none";
 // }
