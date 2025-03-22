@@ -13,6 +13,8 @@ by a team of two using **JavaScript**, **HTML**, and **CSS**.
 ✅ **Classic Chess Rules** – Follows standard chess mechanics.  
 ✅ **Interactive UI** – Simple and clean interface for easy gameplay.
 
+![chess-game-gif](public/resources/chess-game-edit.gif)
+
 ---
 
 ## 🎮 How to Play (Locally)
@@ -46,6 +48,7 @@ npm start
   👉 [http://localhost:3012/](http://localhost:3012/)
 - Click on **"Play Game"** to start.
 - Since the game is local multiplayer, open a second tab to simulate another player.
+- Enjoy playing chess!
 
 ---
 
